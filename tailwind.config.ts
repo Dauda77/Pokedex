@@ -15,5 +15,6 @@ const config: Config = {
     },
   },
   plugins: [],
+  lightMode: 'class',
 };
 export default config;
