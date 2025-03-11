@@ -1,3 +1,5 @@
+"use client";
+
 import PokemonAvatar from '@/components/pokemonavatar/page';
 import PokemonBasicInfo from '@/components/pokemonbasicinfo/page';
 import PokemonStats from '@/components/pokemonstats/page';
