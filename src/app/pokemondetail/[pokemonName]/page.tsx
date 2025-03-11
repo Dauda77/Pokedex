@@ -10,7 +10,7 @@ import { useParams } from 'next/navigation';
 import React from 'react';
 
 const PokemonDetail = () => {
-  const { pokemonName } = useParams(); // Ensure `pokemonName` matches the dynamic segment
+  const { pokemonName } = useParams<{ pokemonName: string }>(); // Ensure `pokemonName` matches the dynamic segment
 
   const { pokemon, isLoading } = usePokemon({ pokemonName });
 
