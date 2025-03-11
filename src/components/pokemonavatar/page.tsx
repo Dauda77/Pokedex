@@ -13,7 +13,7 @@ const PokemonAvatar = ({pokemon}: PokemonAvatarProps) => {
   return (
     <section
       className="max-w-lg mx-auto bg-white shadow-lg rounded-lg overflow-hidden"
-      style={{ backgroundColor: pokemon.color }}
+      style={{ backgroundColor: pokemon.color ?? "ffffff" }}
     >
       <div className="cardimage">
         <img
