@@ -1,5 +1,3 @@
-"use client";
-
 import PokemonAvatar from '@/components/pokemonavatar/page';
 import PokemonBasicInfo from '@/components/pokemonbasicinfo/page';
 import PokemonStats from '@/components/pokemonstats/page';
@@ -7,12 +5,6 @@ import usePokemon from '@/hooks/usePokemon';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import React from 'react';
-
-// 🔹 Add generateStaticParams for static export
-export async function generateStaticParams() {
-  const pokemonNames = ["pikachu", "charmander", "bulbasaur", "squirtle"]; // Fetch real names dynamically if possible
-  return pokemonNames.map((name) => ({ pokemonName: name }));
-}
 
 const PokemonDetail = () => {
   const { pokemonName } = useParams<{ pokemonName: string }>();
